@@ -13,10 +13,10 @@ public class ReviewRepositoryTest {
 	ReviewRepository underTest;
 	
 	private long firstReviewId = 1L;
-	private Review firstReview = new Review(firstReviewId, "review name", "review description");
+	private Review firstReview = new Review(firstReviewId, "review name", "review description", "image");
 	
 	private long secondReviewId;
-	private Review secondReview = new Review(secondReviewId, "review name", "review description");
+	private Review secondReview = new Review(secondReviewId, "review name", "review description", "image");
 	
 	@Test
 	public void shouldFindAReview() {

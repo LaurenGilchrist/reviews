@@ -12,8 +12,8 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewList = new HashMap<>();
 	
 	public ReviewRepository() {
-		Review theGreatestShowman = new Review(1L, "The Greatest Showman", "Greatest musical with a great message", "image1");
-		Review avengers = new Review(2L, "Avengers", "Best action movie", "image2");
+		Review theGreatestShowman = new Review(1L, "The Greatest Showman", "Greatest musical with a great message", "/images/greatestshowman.jpg");
+		Review avengers = new Review(2L, "Avengers", "Best action movie", "/images/avengers.jpg");
 		Review spaceballs = new Review(3L, "Spaceballs", "Best comedy", "/images/spaceballs.jpg");
 		
 		reviewList.put(theGreatestShowman.getId(), theGreatestShowman);
