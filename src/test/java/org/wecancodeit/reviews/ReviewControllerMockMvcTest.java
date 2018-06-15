@@ -69,9 +69,8 @@ public class ReviewControllerMockMvcTest {
 		when(repository.findOne(1L)).thenReturn(firstReview);
 		
 		mvc.perform(get("/review?id=1")).andExpect(model().attribute("reviews", is(firstReview)));
+	
 	}
-	
-	
 	
 	
 }

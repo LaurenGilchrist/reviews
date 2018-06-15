@@ -23,5 +23,7 @@ public class ReviewController {
 	public String findOneReview(@RequestParam(value="id") Long id, Model model)	{
 		model.addAttribute("reviews", reviewRepo.findOne(id));
 		return "review";
+	
 	}
-}
+	}
+

@@ -8,7 +8,7 @@
 
 	<div th:each = "review: ${reviews}">
 		<p th:text = "${review.name}"></p>
-		<img src = "https://m.media-amazon.com/images/M/MV5BMjI1NDYzNzY2Ml5BMl5BanBnXkFtZTgwODQwODczNTM@._V1_UY268_CR0,0,182,268_AL_.jpg"></img>
+		<img th:src = "${review.image}"></img>
 		<p th:text = "${review.description}"></p>
 		<a href = "http://localhost:8080/show-reviews">Back to Movie Home</a>
 	</div>	
